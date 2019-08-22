@@ -1,4 +1,6 @@
 node_modules
+#Lock
+*.lock
 # Logs
 logs
 *.log
