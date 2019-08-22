@@ -1,0 +1,32 @@
+{
+  "name": "spotify-wrapper",
+  "version": "1.0.0",
+  "description": "A Wrapper with unit tests to work of the Spotify Web Api",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliohenderson/spotify-wrapper.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library",
+    "spotify",
+    "tests",
+    "unit"
+  ],
+  "author": "Júlio Henderson <julio.henderson98@gmail.com> (https://linkedin.com/in/juliohenderson/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliohenderson/spotify-wrapper/issues"
+  },
+  "homepage": "https://github.com/juliohenderson/spotify-wrapper#readme"
+}
