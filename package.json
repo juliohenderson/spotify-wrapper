@@ -9,7 +9,7 @@
     "test": "tests"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src/*js",
+    "lint": "./node_modules/.bin/eslint ./src/**/*js ./examples/**/*js ./tests/**/*js",
     "prepush": "yarn lint && yarn test:coverage",
     "clear": "rimraf lib",
     "build": "yarn clear && ./node_modules/.bin/babel --out-dir lib src",
@@ -43,13 +43,14 @@
     "eslint": "5.16.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-mocha": "^6.1.0",
     "eslint-plugin-react": "7.14.3",
     "eslint-plugin-react-hooks": "1.7.0",
     "husky": "^3.0.4",
     "mocha": "^6.2.0",
-    "node-fetch": "^2.6.0",
     "nyc": "^14.1.1",
     "rimraf": "^3.0.0",
     "sinon": "^7.4.1",
@@ -74,5 +75,8 @@
   "bugs": {
     "url": "https://github.com/juliohenderson/spotify-wrapper/issues"
   },
-  "homepage": "https://github.com/juliohenderson/spotify-wrapper#readme"
+  "homepage": "https://github.com/juliohenderson/spotify-wrapper#readme",
+  "dependencies": {
+    "node-fetch": "2.6.0"
+  }
 }
