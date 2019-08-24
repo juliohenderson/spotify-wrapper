@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Wrapper Test</title>
+</head>
+<body>
+    <div id="albums"></div>
+    <script src="../dist/spotify-wrapper.umd.js"></script>
+    <script>
+        const spotify = new SpotifyWrapper({
+            token: 'BQBVu5Y3ne448nHNDMFKkROBHnmH-msAlGaTfzrQWNZLE6JllCG38wF7Z00eu1_uREGQK4IwhEoGzd2gLYK2N0Nwj-WKga_KRjODbbshGTpu0osm4HngGAbtPzWYj4Pcf7d6PjWoWGYxZP3h7WdyCVu7W10U-PYC4DV5WCBS-m27ZwBPqyckDb6avJtYlzl8LW3RvL2t6F76prxux4yqz_03137-0U59-4gzKDTExxqIE4jpyjQKcZa1R7T2qBuTin2v5j1H5qZwcgUiZQ'  
+        })
+        const albums = spotify.search.albums('Avenged Sevenfold');
+        const albumsEl = document.getElementById('albums');
+
+        albums
+            .then(data => {
+                markup = data.albums.items.map(item =>
+                    `<img src=${item.images[0].url} alt=${item.name} style="width: 32%; padding: 5px"/>`
+                ).join('');
+
+                albumsEl.innerHTML = markup;
+            })
+    </script>
+</body>
+</html>
