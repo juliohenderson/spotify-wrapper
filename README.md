@@ -1,6 +1,6 @@
 # Spotify Wrapper
 
-A Wrapper with unit tests to work of the Spotify Web Api.
+A Wrapper with unit tests to work of the [Spotify Web Api](https://developer.spotify.com/documentation/web-api/).
 
 ## Getting Started
 
