@@ -2,7 +2,7 @@
   "name": "spotify-wrapper",
   "version": "1.0.0",
   "description": "A Wrapper with unit tests to work of the Spotify Web Api",
-  "main": "src/index.js",
+  "main": "index.js",
   "directories": {
     "example": "examples",
     "lib": "lib",
