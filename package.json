@@ -19,7 +19,8 @@
     "build:all": "yarn build && yarn build:umd && yarn build:umd:min",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
-    "test:coverage": "nyc yarn test"
+    "test:coverage": "nyc yarn test",
+    "coveralls": "yarn test:coverage && nyc report --reporter-text-lcov | coveralls"
   },
   "nyc": {
     "functions": 80,
@@ -77,6 +78,7 @@
   },
   "homepage": "https://github.com/juliohenderson/spotify-wrapper#readme",
   "dependencies": {
+    "coveralls": "^3.0.6",
     "node-fetch": "2.6.0"
   }
 }
