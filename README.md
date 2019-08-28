@@ -1,5 +1,7 @@
 # Spotify Wrapper
 
+[![Build Status](https://travis-ci.org/juliohenderson/spotify-wrapper.svg?branch=master)](https://travis-ci.org/juliohenderson/spotify-wrapper)
+
 A Wrapper with unit tests to work of the [Spotify Web Api](https://developer.spotify.com/documentation/web-api/).
 
 ## Getting Started
