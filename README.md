@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/juliohenderson/spotify-wrapper.svg?branch=master)](https://travis-ci.org/juliohenderson/spotify-wrapper)
 
+[![Coverage Status](https://coveralls.io/repos/github/juliohenderson/spotify-wrapper/badge.svg?branch=master)](https://coveralls.io/github/juliohenderson/spotify-wrapper?branch=master)
+
 A Wrapper with unit tests to work of the [Spotify Web Api](https://developer.spotify.com/documentation/web-api/).
 
 ## Getting Started
